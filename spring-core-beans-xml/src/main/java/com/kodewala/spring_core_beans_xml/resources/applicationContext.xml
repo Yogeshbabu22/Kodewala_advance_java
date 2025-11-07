@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <!-- bean definitions here -->
+    
+    <bean id="acc" class="com.kodewala.spring_core_beans_xml.Account">
+    <property name ="accountNumber" value="655656454654"/>
+    <property name ="type" value="Savings"/>
+    <property name ="ifsc" value="BOIN002011"/>
+    </bean>
+    
+
+</beans>
