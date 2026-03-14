@@ -1,0 +1,12 @@
+server:
+  port: 8888
+
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Yogeshbabu22/Kodekart-e-commerce-console-base-app
+          default-label: main
+          clone-on-start: true 
+          search-paths: config-server

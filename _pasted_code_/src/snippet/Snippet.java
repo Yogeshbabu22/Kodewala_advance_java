@@ -1,0 +1,12 @@
+package snippet;
+
+public class Snippet {
+	spring:
+	  config:
+	    import: "configserver:http://localhost:8888"
+	  application:
+	    name: order-service
+	  profiles:
+	    active: dev
+}
+
