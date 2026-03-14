@@ -1,16 +1,14 @@
-#base image with jdk
+# Base image with JDK
 FROM eclipse-temurin:21-jdk
 
-#working dir inside container
+# Working directory inside container
 WORKDIR /app
 
-#copy jar file inside container
-COPY target/Demo-Docker-Image-0.0.1-SNAPSHOT.jar app.jar
+# Copy the correct jar file built by Maven
+COPY target/springboot-transaction-transient-0.0.1-SNAPSHOT.jar app.jar
 
-#expose port
+# Expose port (same as your Spring Boot app)
 EXPOSE 8089
 
-#command to run app.jar
-ENTRYPOINT ["java","-jar","app.jar"]
-
-#instruction to create docker image
+# Command to run app.jar
+ENTRYPOINT ["java", "-jar", "app.jar"]
